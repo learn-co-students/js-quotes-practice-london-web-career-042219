@@ -10,7 +10,7 @@
   <title>Motivation</title>
 </head>
 <body class='container center'>
-  <h1>My favorite quotes:</h1>
+  <h1 id="order-quotes"> My favorite quotes: in no particular order</h1>
   <div>
     <ul id="quote-list">
     </ul>
@@ -26,9 +26,11 @@
         <label for="Author">Author</label>
         <input type="text" class="form-control" id="author" placeholder="Flatiron School">
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button id="create-quote" type="submit" class="btn btn-primary">Submit</button>
+      <input type="hidden" id="edit-id" >
     </form>
   </div>
+  <div id="list-quotes"></div>
   <script src="src/index.js"></script>
 </body>
 </html>
