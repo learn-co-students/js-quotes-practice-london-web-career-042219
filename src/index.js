@@ -55,6 +55,7 @@ function renderQuote(quote) {
         }
         createLike(like)
             .then(() => spanLikes.innerText = `${quote.likes ? quote.likes.length : 0}`)
+            // This will prevent it from needing to refresh when it does not find the likes. 
     })
     
     deleteBtn.addEventListener('click', (e) => {
